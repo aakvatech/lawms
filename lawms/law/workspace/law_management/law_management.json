@@ -1,0 +1,40 @@
+{
+ "cards_label": "",
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-02-01 15:39:11.123724",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Law Management",
+ "links": [],
+ "modified": "2022-02-01 15:44:02.431450",
+ "modified_by": "mohammedt243@gmail.com",
+ "module": "LAW",
+ "name": "Law Management",
+ "owner": "mohammedt243@gmail.com",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Create a Lawyer",
+   "link_to": "Lawyer",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Create a Case",
+   "link_to": "Case",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "Shortcuts"
+}

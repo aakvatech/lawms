@@ -31,6 +31,7 @@
   "opposition_lawyer",
   "judge",
   "column_break_25",
+  "court",
   "contact_details",
   "result_history_section",
   "result_date",
@@ -197,11 +198,17 @@
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "label": "Description"
+  },
+  {
+   "fieldname": "court",
+   "fieldtype": "Link",
+   "label": "Court",
+   "options": "Court"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-01 15:19:19.828418",
+ "modified": "2022-02-01 16:33:41.346367",
  "modified_by": "Administrator",
  "module": "LAW",
  "name": "Case",

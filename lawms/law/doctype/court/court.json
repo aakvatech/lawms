@@ -1,25 +1,38 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:court",
+ "autoname": "field:court_name",
  "creation": "2022-02-01 11:50:56.034816",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "court"
+  "court_name",
+  "court_type",
+  "court_location"
  ],
  "fields": [
   {
-   "fieldname": "court",
+   "fieldname": "court_name",
    "fieldtype": "Data",
-   "label": "Court",
+   "label": "Court Name",
    "unique": 1
+  },
+  {
+   "fieldname": "court_type",
+   "fieldtype": "Link",
+   "label": "Court Type",
+   "options": "Court Type"
+  },
+  {
+   "fieldname": "court_location",
+   "fieldtype": "Data",
+   "label": "Court Location"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-01 15:19:23.884883",
+ "modified": "2022-02-01 16:26:11.077735",
  "modified_by": "Administrator",
  "module": "LAW",
  "name": "Court",
