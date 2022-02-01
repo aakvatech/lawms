@@ -1,0 +1,470 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2022-02-01 12:00:09.000747",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information_section",
+  "name1",
+  "profile_photo",
+  "status",
+  "column_break_4",
+  "type",
+  "public_information_section",
+  "contact_information_section",
+  "working_address",
+  "work_mobile",
+  "work_location",
+  "column_break_11",
+  "work_email",
+  "work_phone",
+  "position_section",
+  "department",
+  "job_title",
+  "column_break_18",
+  "working_time",
+  "employment_date",
+  "section_break_21",
+  "practice_area",
+  "fee_method",
+  "fees_per_hour",
+  "column_break_25",
+  "fees_per_trial",
+  "column_break_27",
+  "fees_fixed",
+  "skills_section",
+  "skills",
+  "personal_information",
+  "citizenship_section",
+  "nationality",
+  "id_no",
+  "column_break_38",
+  "passport_no",
+  "bank_account_no",
+  "contact_section",
+  "home_address",
+  "column_break_35",
+  "home_phone",
+  "status_section",
+  "gender",
+  "column_break_39",
+  "marital_status",
+  "birth_section",
+  "dob",
+  "column_break_48",
+  "age",
+  "column_break_43",
+  "qualifications_section",
+  "degree",
+  "certificate",
+  "year",
+  "institue",
+  "column_break_51",
+  "university",
+  "percentage_achieved_in_certificate",
+  "documents",
+  "experience_section",
+  "information_section",
+  "previous_experience_in_months",
+  "gap_in_months",
+  "column_break_56",
+  "current_experience_in_months",
+  "countable_experience_in_months",
+  "column_break_62",
+  "assigned",
+  "won",
+  "column_break_65",
+  "lost",
+  "settled"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "profile_photo",
+   "fieldtype": "Attach Image",
+   "label": "Profile Photo"
+  },
+  {
+   "default": "0",
+   "fieldname": "status",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Lawyer Type"
+  },
+  {
+   "fieldname": "public_information_section",
+   "fieldtype": "Section Break",
+   "label": "Public Information"
+  },
+  {
+   "fieldname": "contact_information_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Information"
+  },
+  {
+   "fieldname": "working_address",
+   "fieldtype": "Data",
+   "label": "Working Address"
+  },
+  {
+   "fieldname": "work_mobile",
+   "fieldtype": "Data",
+   "label": "Work Mobile"
+  },
+  {
+   "fieldname": "work_location",
+   "fieldtype": "Data",
+   "label": "Work Location"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_email",
+   "fieldtype": "Data",
+   "label": "Work Email"
+  },
+  {
+   "fieldname": "work_phone",
+   "fieldtype": "Data",
+   "label": "Work Phone"
+  },
+  {
+   "fieldname": "position_section",
+   "fieldtype": "Section Break",
+   "label": "Position"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Company Department"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "working_time",
+   "fieldtype": "Data",
+   "label": "Working Time"
+  },
+  {
+   "fieldname": "employment_date",
+   "fieldtype": "Date",
+   "label": "Employment Date"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "practice_area",
+   "fieldtype": "Table",
+   "label": "Practice Area",
+   "options": "Practice Area"
+  },
+  {
+   "fieldname": "fee_method",
+   "fieldtype": "Section Break",
+   "label": "Fee Method",
+   "options": "Fee Method"
+  },
+  {
+   "fieldname": "fees_per_hour",
+   "fieldtype": "Currency",
+   "label": "Default Fees Per Hour"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fees_per_trial",
+   "fieldtype": "Currency",
+   "label": "Default Fee per trial"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fees_fixed",
+   "fieldtype": "Currency",
+   "label": "Default Fixed Fee",
+   "mandatory_depends_on": "fees_fixed_check"
+  },
+  {
+   "fieldname": "skills_section",
+   "fieldtype": "Section Break",
+   "label": "Skills"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Table",
+   "label": "Skills",
+   "options": "Skills"
+  },
+  {
+   "fieldname": "personal_information",
+   "fieldtype": "Section Break",
+   "label": "Personal Information"
+  },
+  {
+   "fieldname": "citizenship_section",
+   "fieldtype": "Section Break",
+   "label": "Citizenship"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "id_no",
+   "fieldtype": "Data",
+   "label": "ID No"
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "label": "Bank Account No"
+  },
+  {
+   "fieldname": "contact_section",
+   "fieldtype": "Section Break",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "home_address",
+   "fieldtype": "Data",
+   "label": "Home Address"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "home_phone",
+   "fieldtype": "Data",
+   "label": "Home Phone"
+  },
+  {
+   "fieldname": "status_section",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Data",
+   "label": "Marital Status"
+  },
+  {
+   "fieldname": "birth_section",
+   "fieldtype": "Section Break",
+   "label": "Birth "
+  },
+  {
+   "bold": 1,
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_preview": 1,
+   "label": "Birth Date"
+  },
+  {
+   "fieldname": "column_break_48",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qualifications_section",
+   "fieldtype": "Section Break",
+   "label": "Qualifications"
+  },
+  {
+   "fieldname": "degree",
+   "fieldtype": "Link",
+   "label": "Degree",
+   "options": "Law Degree"
+  },
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Link",
+   "label": "Certificate",
+   "options": "Law Certificate"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "institue",
+   "fieldtype": "Link",
+   "label": "Institue",
+   "options": "Law Institute"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "university",
+   "fieldtype": "Link",
+   "label": "University",
+   "options": "Law University"
+  },
+  {
+   "fieldname": "percentage_achieved_in_certificate",
+   "fieldtype": "Data",
+   "label": "Percentage achieved in Certificate"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Attach",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "experience_section",
+   "fieldtype": "Section Break",
+   "label": "Experience"
+  },
+  {
+   "fieldname": "information_section",
+   "fieldtype": "Section Break",
+   "label": "Information"
+  },
+  {
+   "fieldname": "previous_experience_in_months",
+   "fieldtype": "Data",
+   "label": "Previous Experience in Months"
+  },
+  {
+   "fieldname": "gap_in_months",
+   "fieldtype": "Data",
+   "label": "Gap in Months"
+  },
+  {
+   "fieldname": "column_break_56",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "current_experience_in_months",
+   "fieldtype": "Data",
+   "label": "Current Experience in Months"
+  },
+  {
+   "fieldname": "countable_experience_in_months",
+   "fieldtype": "Data",
+   "label": "Countable Experience in Months"
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Section Break",
+   "label": "Current Cases"
+  },
+  {
+   "fieldname": "assigned",
+   "fieldtype": "Data",
+   "label": "Assigned"
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Data",
+   "label": "Won"
+  },
+  {
+   "fieldname": "column_break_65",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lost",
+   "fieldtype": "Data",
+   "label": "Lost"
+  },
+  {
+   "fieldname": "settled",
+   "fieldtype": "Data",
+   "label": "Settled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-01 15:20:07.364147",
+ "modified_by": "Administrator",
+ "module": "LAW",
+ "name": "Lawyer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

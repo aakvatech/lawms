@@ -1,0 +1,225 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:case_name",
+ "creation": "2022-02-01 12:05:56.446900",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_details_section",
+  "case_name",
+  "type",
+  "category",
+  "column_break_3",
+  "assigned_to",
+  "client_name",
+  "section_break_5",
+  "fees_per_trial",
+  "column_break_10",
+  "fees_per_hour",
+  "column_break_12",
+  "fees_fixed",
+  "section_break_14",
+  "practice_area",
+  "date_opened",
+  "matter_details",
+  "matter_details_table",
+  "act",
+  "acts",
+  "section_break_21",
+  "opposition_lawyer",
+  "judge",
+  "column_break_25",
+  "contact_details",
+  "result_history_section",
+  "result_date",
+  "column_break_30",
+  "result_type",
+  "section_break_17",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_details_section",
+   "fieldtype": "Section Break",
+   "label": "Case Details"
+  },
+  {
+   "fieldname": "case_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Case Type"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Category"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "Lawyer"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Link",
+   "label": "Client Name",
+   "options": "Law Customer"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Payment Type"
+  },
+  {
+   "fieldname": "fees_per_trial",
+   "fieldtype": "Data",
+   "label": "Fees Per Trial"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fees_per_hour",
+   "fieldtype": "Data",
+   "label": "Fees Per hour"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fees_fixed",
+   "fieldtype": "Data",
+   "label": "Fees Fixed"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "practice_area",
+   "fieldtype": "Table",
+   "label": "Practice Area",
+   "options": "Practice Area"
+  },
+  {
+   "fieldname": "date_opened",
+   "fieldtype": "Date",
+   "label": "Date Opened"
+  },
+  {
+   "fieldname": "matter_details",
+   "fieldtype": "Section Break",
+   "label": "Matter Details",
+   "options": "Case Matter Details"
+  },
+  {
+   "fieldname": "matter_details_table",
+   "fieldtype": "Table",
+   "label": "Matter Details",
+   "options": "Matter Details"
+  },
+  {
+   "fieldname": "act",
+   "fieldtype": "Section Break",
+   "label": "Act and Article"
+  },
+  {
+   "fieldname": "acts",
+   "fieldtype": "Table",
+   "options": "Act and Article"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "opposition_lawyer",
+   "fieldtype": "Link",
+   "label": "Opposition Lawyer",
+   "options": "Opposition Lawyer"
+  },
+  {
+   "fieldname": "judge",
+   "fieldtype": "Link",
+   "label": "Judge",
+   "options": "Judge"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_details",
+   "fieldtype": "Data",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "result_history_section",
+   "fieldtype": "Section Break",
+   "label": "Result History"
+  },
+  {
+   "fieldname": "result_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "options": "Case Result History"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "result_type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-01 15:19:19.828418",
+ "modified_by": "Administrator",
+ "module": "LAW",
+ "name": "Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
