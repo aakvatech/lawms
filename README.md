@@ -1,0 +1,7 @@
+## LAW
+
+Law
+
+#### License
+
+MIT

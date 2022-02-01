@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include lawms *.css
+recursive-include lawms *.csv
+recursive-include lawms *.html
+recursive-include lawms *.ico
+recursive-include lawms *.js
+recursive-include lawms *.json
+recursive-include lawms *.md
+recursive-include lawms *.png
+recursive-include lawms *.py
+recursive-include lawms *.svg
+recursive-include lawms *.txt
+recursive-exclude lawms *.pyc
