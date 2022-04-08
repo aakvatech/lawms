@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "APL.####",
+ "creation": "2022-04-08 20:03:58.298349",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "appellant",
+  "rank",
+  "appellant_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "appellant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Appellant",
+   "options": "Appellant"
+  },
+  {
+   "fieldname": "rank",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Rank",
+   "options": "Rank"
+  },
+  {
+   "default": "Appellant",
+   "fieldname": "appellant_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Applicant Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-08 20:11:19.525236",
+ "modified_by": "Administrator",
+ "module": "LAW",
+ "name": "Appellant Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
