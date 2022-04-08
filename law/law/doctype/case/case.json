@@ -1,0 +1,467 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{####}-{header_case_number}-{header_case_year}",
+ "creation": "2022-03-21 19:46:57.483730",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "header",
+  "header_court",
+  "header_case_type",
+  "header_case_number",
+  "header_case_year",
+  "header_practice_area",
+  "column_break_4",
+  "judge_table",
+  "header_case_status",
+  "ar",
+  "appellant_table",
+  "column_break_12",
+  "respondent_table",
+  "claims_and_liabilties_section",
+  "claims",
+  "liability",
+  "appeal_from_section",
+  "case",
+  "appeal_from_court",
+  "appeal_from_judge",
+  "appeal_from_column_break",
+  "appeal_from_date",
+  "appeal_from_case_number",
+  "appeal_from_year",
+  "court_proceedings_section",
+  "case_proceeding",
+  "case_details",
+  "case_details_title",
+  "case_details_client_name",
+  "case_details_date_opened",
+  "case_details_section_break",
+  "case_details_assigned_to",
+  "payment",
+  "payment_fees_fixed",
+  "payment_fees_per_trial",
+  "payment_column_break",
+  "payment_fees_per_hour",
+  "legislation",
+  "legislation_principle_legislation",
+  "legislation_subsidiary_legislation",
+  "legislation_opposition_lawyer",
+  "precedence_results_section",
+  "precedence_table",
+  "result_history",
+  "result_history_table",
+  "pleadings_section",
+  "plaint",
+  "column_break_48",
+  "written_statement_of_defense",
+  "submissions_section",
+  "in_chief",
+  "reply",
+  "column_break_53",
+  "rejoinder",
+  "applications_section",
+  "chamber_summons",
+  "counter_affidavits",
+  "exhibits_section",
+  "exhibits",
+  "column_break_57",
+  "other_documents",
+  "judgement",
+  "judgement_description",
+  "judgement_document"
+ ],
+ "fields": [
+  {
+   "fieldname": "header",
+   "fieldtype": "Section Break",
+   "label": "Header"
+  },
+  {
+   "fieldname": "header_court",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "Court/Tribunal",
+   "options": "Court"
+  },
+  {
+   "fieldname": "header_case_type",
+   "fieldtype": "Link",
+   "label": "Case Type",
+   "options": "Case Type"
+  },
+  {
+   "fieldname": "header_case_number",
+   "fieldtype": "Data",
+   "label": "Case Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "header_case_year",
+   "fieldtype": "Data",
+   "label": "Case Year"
+  },
+  {
+   "fieldname": "header_practice_area",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Practice Area",
+   "options": "Practice Area"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "header_case_status",
+   "fieldtype": "Table",
+   "label": "Case Status",
+   "options": "Case Status Table"
+  },
+  {
+   "fieldname": "ar",
+   "fieldtype": "Section Break",
+   "label": "Appellant and Respodent"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "appeal_from_section",
+   "fieldtype": "Section Break",
+   "label": "Appeal From"
+  },
+  {
+   "fieldname": "case",
+   "fieldtype": "Link",
+   "label": "Case",
+   "options": "Case"
+  },
+  {
+   "fetch_from": "case.header_court",
+   "fieldname": "appeal_from_court",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Court",
+   "options": "Court"
+  },
+  {
+   "fieldname": "appeal_from_judge",
+   "fieldtype": "Link",
+   "label": "Judge",
+   "options": "Judge"
+  },
+  {
+   "fieldname": "appeal_from_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "appeal_from_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "case.header_case_number",
+   "fieldname": "appeal_from_case_number",
+   "fieldtype": "Data",
+   "label": "Case Number"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "court_proceedings_section",
+   "fieldtype": "Section Break",
+   "label": "Court Proceedings"
+  },
+  {
+   "fieldname": "case_proceeding",
+   "fieldtype": "Table",
+   "label": "Case Proceeding",
+   "options": "Court Proceeding Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "case_details",
+   "fieldtype": "Section Break",
+   "label": "Case Details"
+  },
+  {
+   "columns": 2,
+   "fieldname": "case_details_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Case Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "case_details_client_name",
+   "fieldtype": "Link",
+   "label": "Client Name",
+   "options": "Law Customer"
+  },
+  {
+   "fieldname": "case_details_date_opened",
+   "fieldtype": "Date",
+   "label": "Date Opened"
+  },
+  {
+   "fieldname": "case_details_section_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_details_assigned_to",
+   "fieldtype": "Table",
+   "label": "Assigned To",
+   "options": "Lawyer Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "payment",
+   "fieldtype": "Section Break",
+   "label": "Payment Type"
+  },
+  {
+   "fieldname": "payment_fees_fixed",
+   "fieldtype": "Data",
+   "label": "Fees Fixed"
+  },
+  {
+   "fieldname": "payment_fees_per_trial",
+   "fieldtype": "Data",
+   "label": "Fees Per Trial"
+  },
+  {
+   "fieldname": "payment_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_fees_per_hour",
+   "fieldtype": "Data",
+   "label": "Fees Per hour"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "legislation",
+   "fieldtype": "Section Break",
+   "label": "Legislation"
+  },
+  {
+   "fieldname": "legislation_principle_legislation",
+   "fieldtype": "Table",
+   "label": "Principle Legislation",
+   "options": "Principle Legislation"
+  },
+  {
+   "fieldname": "legislation_subsidiary_legislation",
+   "fieldtype": "Table",
+   "label": "Subsidiary Legislation",
+   "options": "Subsidiary Legislation"
+  },
+  {
+   "fieldname": "legislation_opposition_lawyer",
+   "fieldtype": "Table",
+   "label": "Opposition Lawyer",
+   "options": "Opposition Lawyer Table"
+  },
+  {
+   "fieldname": "precedence_results_section",
+   "fieldtype": "Section Break",
+   "label": "Precedent"
+  },
+  {
+   "fieldname": "precedence_table",
+   "fieldtype": "Table",
+   "label": "Precedent",
+   "options": "Precedence"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "result_history",
+   "fieldtype": "Section Break",
+   "label": "Result History"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "judgement",
+   "fieldtype": "Section Break",
+   "label": "Judgement"
+  },
+  {
+   "fieldname": "judgement_description",
+   "fieldtype": "Text Editor",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "judgement_document",
+   "fieldtype": "Attach",
+   "label": "Judgement"
+  },
+  {
+   "fetch_from": "case.header_case_year",
+   "fieldname": "appeal_from_year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Case Year"
+  },
+  {
+   "fieldname": "judge_table",
+   "fieldtype": "Table",
+   "label": "Judge",
+   "options": "Judge Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "claims_and_liabilties_section",
+   "fieldtype": "Section Break",
+   "label": "Claims and Liabilties"
+  },
+  {
+   "fieldname": "claims",
+   "fieldtype": "Text Editor",
+   "label": "Claims",
+   "options": "Claim"
+  },
+  {
+   "fieldname": "liability",
+   "fieldtype": "Text Editor",
+   "label": "Liability",
+   "options": "Liability"
+  },
+  {
+   "fieldname": "result_history_table",
+   "fieldtype": "Table",
+   "label": "Result History",
+   "options": "Result History Table"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "appellant_table",
+   "fieldtype": "Table",
+   "label": "Plaintiff(s)/Applicant(s)/Appellant(s)/Claimant(s)",
+   "options": "Appellant Table"
+  },
+  {
+   "fieldname": "respondent_table",
+   "fieldtype": "Table",
+   "label": "Respondent(s)",
+   "options": "Respondent Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "pleadings_section",
+   "fieldtype": "Section Break",
+   "label": "Pleadings"
+  },
+  {
+   "bold": 1,
+   "fieldname": "plaint",
+   "fieldtype": "Attach",
+   "label": "Plaint"
+  },
+  {
+   "bold": 1,
+   "fieldname": "written_statement_of_defense",
+   "fieldtype": "Attach",
+   "label": "Written statement of defense"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "submissions_section",
+   "fieldtype": "Section Break",
+   "label": "Submissions"
+  },
+  {
+   "bold": 1,
+   "fieldname": "in_chief",
+   "fieldtype": "Attach",
+   "label": "In Chief"
+  },
+  {
+   "fieldname": "reply",
+   "fieldtype": "Attach",
+   "label": "Reply"
+  },
+  {
+   "bold": 1,
+   "fieldname": "rejoinder",
+   "fieldtype": "Attach",
+   "label": "Rejoinder"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "applications_section",
+   "fieldtype": "Section Break",
+   "label": "Applications"
+  },
+  {
+   "bold": 1,
+   "fieldname": "chamber_summons",
+   "fieldtype": "Attach",
+   "label": "Chamber Summons"
+  },
+  {
+   "bold": 1,
+   "fieldname": "counter_affidavits",
+   "fieldtype": "Attach",
+   "label": "Counter affidavits"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "exhibits_section",
+   "fieldtype": "Section Break",
+   "label": "Exhibits"
+  },
+  {
+   "fieldname": "exhibits",
+   "fieldtype": "Table",
+   "label": "Exhibits",
+   "options": "Exhibit"
+  },
+  {
+   "fieldname": "other_documents",
+   "fieldtype": "Table",
+   "label": "Other Documents",
+   "options": "Other Document"
+  },
+  {
+   "fieldname": "column_break_48",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_57",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-06 09:03:39.488756",
+ "modified_by": "Administrator",
+ "module": "Law",
+ "name": "Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

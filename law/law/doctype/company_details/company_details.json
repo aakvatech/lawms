@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-31 13:14:19.308133",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "column_break_2",
+  "logo",
+  "header_section",
+  "header_description",
+  "about_us_section",
+  "aboutus_summary",
+  "aboutus_description",
+  "data_9",
+  "text",
+  "text2"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "header_section",
+   "fieldtype": "Section Break",
+   "label": "Header"
+  },
+  {
+   "fieldname": "header_description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "about_us_section",
+   "fieldtype": "Section Break",
+   "label": "About us"
+  },
+  {
+   "fieldname": "aboutus_summary",
+   "fieldtype": "Text Editor",
+   "label": "summary"
+  },
+  {
+   "fieldname": "aboutus_description",
+   "fieldtype": "Text Editor",
+   "label": "description"
+  },
+  {
+   "fieldname": "data_9",
+   "fieldtype": "Section Break",
+   "label": "why choose us"
+  },
+  {
+   "fieldname": "text",
+   "fieldtype": "Text Editor",
+   "label": "text"
+  },
+  {
+   "fieldname": "text2",
+   "fieldtype": "Text Editor",
+   "label": "text2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-31 13:22:27.829833",
+ "modified_by": "Administrator",
+ "module": "Law",
+ "name": "Company Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

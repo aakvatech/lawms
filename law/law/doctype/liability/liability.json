@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:liability",
+ "creation": "2022-03-28 05:14:46.239357",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "liability"
+ ],
+ "fields": [
+  {
+   "fieldname": "liability",
+   "fieldtype": "Data",
+   "label": "Liability",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-28 05:14:46.239357",
+ "modified_by": "Administrator",
+ "module": "Law",
+ "name": "Liability",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

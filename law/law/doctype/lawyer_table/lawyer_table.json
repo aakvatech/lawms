@@ -1,0 +1,33 @@
+{
+ "_comments": "[{\"comment\": \"<div class=\\\"ql-editor read-mode\\\"><p>change case back to link</p></div>\", \"by\": \"Administrator\", \"name\": \"cdd2c8ec72\"}]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LAW.####",
+ "creation": "2022-03-20 07:19:55.048531",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lawyer"
+ ],
+ "fields": [
+  {
+   "fieldname": "lawyer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Lawyer",
+   "options": "Lawyer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-20 07:19:59.158250",
+ "modified_by": "Administrator",
+ "module": "Law",
+ "name": "Lawyer Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

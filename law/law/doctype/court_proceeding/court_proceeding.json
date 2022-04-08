@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {case} {proceeding_number}",
+ "creation": "2022-03-20 07:21:47.487701",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case",
+  "court",
+  "type",
+  "case_number",
+  "case_year",
+  "column_break_5",
+  "proceeding_date",
+  "proceeding_number",
+  "judge_table",
+  "appellant_and_respondent_section",
+  "appellant_table",
+  "column_break_9",
+  "respondent_table",
+  "case_details_section",
+  "case_title",
+  "client_name",
+  "assigned_to",
+  "section_break_17",
+  "practice_area",
+  "date_opened",
+  "legislation_section",
+  "principle_legislation",
+  "subsidiary_legislation",
+  "opposition_lawyer",
+  "judgement_section",
+  "description",
+  "summary"
+ ],
+ "fields": [
+  {
+   "fieldname": "case",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Case",
+   "options": "Case",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "case.header_court",
+   "fieldname": "court",
+   "fieldtype": "Link",
+   "label": "Court",
+   "options": "Court"
+  },
+  {
+   "fetch_from": "case.header_case_type",
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Case Type",
+   "options": "Case Type"
+  },
+  {
+   "fetch_from": "case.header_case_number",
+   "fieldname": "case_number",
+   "fieldtype": "Data",
+   "label": "Case Number"
+  },
+  {
+   "fetch_from": "case.header_case_year",
+   "fieldname": "case_year",
+   "fieldtype": "Data",
+   "label": "Case Year"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "proceeding_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Proceeding Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "proceeding_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Proceeding Number",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "appellant_and_respondent_section",
+   "fieldtype": "Section Break",
+   "label": "Appellant and Respondent"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "case_details_section",
+   "fieldtype": "Section Break",
+   "label": "Case Details"
+  },
+  {
+   "fetch_from": "case.case_details_title",
+   "fieldname": "case_title",
+   "fieldtype": "Data",
+   "label": "Case Title"
+  },
+  {
+   "fetch_from": "case.case_details_client_name",
+   "fieldname": "client_name",
+   "fieldtype": "Link",
+   "label": "Client Name",
+   "options": "Law Customer"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Table",
+   "label": "Assigned To",
+   "options": "Lawyer Table"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "practice_area",
+   "fieldtype": "Link",
+   "label": "Practice Area",
+   "options": "Practice Area"
+  },
+  {
+   "fieldname": "date_opened",
+   "fieldtype": "Date",
+   "label": "Date Opened"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "legislation_section",
+   "fieldtype": "Section Break",
+   "label": "Legislation"
+  },
+  {
+   "fieldname": "principle_legislation",
+   "fieldtype": "Table",
+   "label": "Principle Legislation",
+   "options": "Principle Legislation"
+  },
+  {
+   "fieldname": "subsidiary_legislation",
+   "fieldtype": "Table",
+   "label": "Subsidiary Legislation",
+   "options": "Subsidiary Legislation"
+  },
+  {
+   "fieldname": "opposition_lawyer",
+   "fieldtype": "Table",
+   "label": "Opposition Lawyer",
+   "options": "Opposition Lawyer Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "judgement_section",
+   "fieldtype": "Section Break",
+   "label": "Judgement"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Attach",
+   "label": "Description"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "Text Editor",
+   "label": "Summary"
+  },
+  {
+   "fetch_from": "case.header_judge",
+   "fieldname": "judge_table",
+   "fieldtype": "Table",
+   "label": "Judge",
+   "options": "Judge Table"
+  },
+  {
+   "fetch_from": "case.ar_appellant",
+   "fieldname": "appellant_table",
+   "fieldtype": "Table",
+   "label": "Appellant",
+   "options": "Appellant Table"
+  },
+  {
+   "fetch_from": "case.ar_respondent",
+   "fieldname": "respondent_table",
+   "fieldtype": "Table",
+   "label": "Respondent",
+   "options": "Respondent Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-29 11:15:29.828622",
+ "modified_by": "Administrator",
+ "module": "Law",
+ "name": "Court Proceeding",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
