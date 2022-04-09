@@ -8,8 +8,12 @@
  "engine": "InnoDB",
  "field_order": [
   "court_name",
+  "court_location",
+  "column_break_3",
   "court_type",
-  "court_location"
+  "court_subtype",
+  "section_break_6",
+  "court_description"
  ],
  "fields": [
   {
@@ -28,11 +32,30 @@
    "fieldname": "court_location",
    "fieldtype": "Data",
    "label": "Court Location"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "court_subtype",
+   "fieldtype": "Link",
+   "label": "Court SubType",
+   "options": "Court SubType"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "court_description",
+   "fieldtype": "Data",
+   "label": "Court Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-01 16:26:11.077735",
+ "modified": "2022-04-09 06:19:16.814601",
  "modified_by": "Administrator",
  "module": "LAW",
  "name": "Court",
