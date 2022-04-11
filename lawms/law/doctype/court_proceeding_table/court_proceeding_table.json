@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{proceeding} {date}",
+ "creation": "2022-04-11 06:47:51.806617",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "proceeding",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "proceeding",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Proceeding",
+   "options": "Court Proceeding"
+  },
+  {
+   "fetch_from": "proceeding.proceeding_date",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-11 06:47:51.806617",
+ "modified_by": "Administrator",
+ "module": "LAW",
+ "name": "Court Proceeding Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
