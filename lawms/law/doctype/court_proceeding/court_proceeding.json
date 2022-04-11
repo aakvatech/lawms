@@ -140,8 +140,9 @@
   },
   {
    "fieldname": "assigned_to",
-   "fieldtype": "Data",
-   "label": "Assigned To"
+   "fieldtype": "Table",
+   "label": "Assigned To",
+   "options": "Lawyer Table"
   },
   {
    "fieldname": "section_break_17",
@@ -201,7 +202,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-11 06:47:28.668467",
+ "modified": "2022-04-11 06:57:20.595129",
  "modified_by": "Administrator",
  "module": "LAW",
  "name": "Court Proceeding",
