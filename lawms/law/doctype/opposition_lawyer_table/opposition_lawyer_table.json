@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:case",
+ "creation": "2022-04-09 06:15:25.196404",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "opposition_lawyer",
+  "case"
+ ],
+ "fields": [
+  {
+   "fieldname": "opposition_lawyer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Opposition Lawyer",
+   "options": "Opposition Lawyer"
+  },
+  {
+   "fieldname": "case",
+   "fieldtype": "Link",
+   "label": "Case",
+   "options": "Case",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-09 06:15:25.196404",
+ "modified_by": "Administrator",
+ "module": "LAW",
+ "name": "Opposition Lawyer Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
