@@ -1,0 +1,201 @@
+.store-badge {
+	display: inline-block;
+}
+.store-badge.app-store {
+	width: 135px;
+}
+.store-badge.play-store {
+	width: 155px;
+}
+.footer-message{ display: none;}
+td {
+	min-width: 200px;
+	height:50px;
+}
+th {
+	background-color: #f7fafc;
+}
+tr.title td {
+	border-left: 0px solid;
+	border-right: 0px solid;
+	padding:20px;
+	font-size:20px;
+	background-color:white;
+	column-span:all
+}
+
+.check:after {
+	color:green;
+	font-size: 18px;
+	font-weight: 700;
+	content: 'âœ“'
+}
+
+.times:after {
+	color:#ff5858;
+	font-size: 18px;
+	content: 'âœ˜'
+}
+
+@media only screen and (max-width: 800px) {
+
+	/* Force table to not be like tables anymore */
+	#no-more-tables table,
+	#no-more-tables thead,
+	#no-more-tables tbody,
+	#no-more-tables th,
+	#no-more-tables td,
+	#no-more-tables tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	#no-more-tables th {
+		color: #4A5568;
+		background-color: #EDF2F7;
+		border-color: #EDF2F7;
+	}
+
+	#no-more-tables td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+		white-space: normal;
+		text-align:left;
+	}
+
+	#no-more-tables td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		text-align:left;
+	}
+
+	/*
+	Label the data
+	*/
+	#no-more-tables td:before {
+		content: attr(data-title);
+		margin-left: 10px;
+		margin-top: 8px;
+	}
+
+	#no-more-tables td.legend {
+		font-weight: bold;
+		padding-left: 15px;
+		text-align: left;
+		border: 1px solid #EDF2F7;
+		background-color: #f7fafc;
+	}
+}
+
+.footer-message {
+	display: none;
+}
+
+:root {
+	--thumb-size: 16px;
+	--thumb-border-color: var(--gray-600);
+	--slider-height: 8px;
+}
+
+
+input[type=range].pricing-slider {
+	-webkit-appearance: none;
+	width: 100%;
+	margin: 5.5px 0;
+}
+input[type=range].pricing-slider:focus {
+	outline: none;
+}
+input[type=range].pricing-slider::-webkit-slider-runnable-track {
+	width: 100%;
+	height: var(--slider-height);
+	cursor: pointer;
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+	background: var(--primary);
+	border-radius: 17.9px;
+	border: 0px solid #010101;
+}
+
+
+input[type=range].pricing-slider::-webkit-slider-thumb {
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+	border: 1.8px solid var(--thumb-border-color);
+	height: var(--thumb-size);
+	width: var(--thumb-size);
+	border-radius: 50px;
+	background: #ffffff;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -5.5px;
+}
+input[type=range].pricing-slider:focus::-webkit-slider-runnable-track {
+	background: #8b97da;
+}
+input[type=range].pricing-slider::-moz-range-track {
+	width: 100%;
+	height: var(--slider-height);
+	cursor: pointer;
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+	background: var(--primary);
+	border-radius: 17.9px;
+	border: 0px solid #010101;
+}
+input[type=range].pricing-slider::-moz-range-thumb {
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+	border: 1.8px solid var(--thumb-border-color);
+	height: var(--thumb-size);
+	width: var(--thumb-size);
+	border-radius: 50px;
+	background: #ffffff;
+	cursor: pointer;
+}
+input[type=range].pricing-slider::-ms-track {
+	width: 100%;
+	height: var(--slider-height);
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+input[type=range].pricing-slider::-ms-fill-lower {
+	background: #3f51c1;
+	border: 0px solid #010101;
+	border-radius: 35.8px;
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range].pricing-slider::-ms-fill-upper {
+	background: var(--primary);
+	border: 0px solid #010101;
+	border-radius: 35.8px;
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range].pricing-slider::-ms-thumb {
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+	border: 1.8px solid var(--thumb-border-color);
+	height: var(--thumb-size);
+	width: var(--thumb-size);
+	border-radius: 50px;
+	background: #ffffff;
+	cursor: pointer;
+	height: var(--slider-height);
+}
+input[type=range].pricing-slider:focus::-ms-fill-lower {
+	background: var(--primary);
+}
+input[type=range].pricing-slider:focus::-ms-fill-upper {
+	background: #8b97da;
+}
