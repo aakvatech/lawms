@@ -46,27 +46,13 @@
   "payment_column_break",
   "payment_fees_per_hour",
   "legislation",
-  "legislation_principle_legislation",
-  "legislation_subsidiary_legislation",
+  "legislation_table",
+  "opposition_lawyer_section",
   "legislation_opposition_lawyer",
   "result_history",
   "result_history_table",
-  "pleadings_section",
-  "plaint",
-  "column_break_48",
-  "written_statement_of_defense",
-  "submissions_section",
-  "in_chief",
-  "reply",
-  "column_break_53",
-  "rejoinder",
-  "applications_section",
-  "chamber_summons",
-  "counter_affidavits",
-  "exhibits_section",
-  "exhibits",
-  "column_break_57",
-  "other_documents",
+  "attachments",
+  "case_documents_table",
   "judgement",
   "judgement_description",
   "judgement_document"
@@ -293,18 +279,6 @@
    "label": "Legislation"
   },
   {
-   "fieldname": "legislation_principle_legislation",
-   "fieldtype": "Table",
-   "label": "Principle Legislation",
-   "options": "Principle Legislation"
-  },
-  {
-   "fieldname": "legislation_subsidiary_legislation",
-   "fieldtype": "Table",
-   "label": "Subsidiary Legislation",
-   "options": "Subsidiary Legislation"
-  },
-  {
    "fieldname": "legislation_opposition_lawyer",
    "fieldtype": "Table",
    "label": "Opposition Lawyer",
@@ -324,95 +298,6 @@
   },
   {
    "collapsible": 1,
-   "fieldname": "pleadings_section",
-   "fieldtype": "Section Break",
-   "label": "Pleadings"
-  },
-  {
-   "bold": 1,
-   "fieldname": "plaint",
-   "fieldtype": "Attach",
-   "label": "Plaint"
-  },
-  {
-   "fieldname": "column_break_48",
-   "fieldtype": "Column Break"
-  },
-  {
-   "bold": 1,
-   "fieldname": "written_statement_of_defense",
-   "fieldtype": "Attach",
-   "label": "Written statement of defense"
-  },
-  {
-   "collapsible": 1,
-   "fieldname": "submissions_section",
-   "fieldtype": "Section Break",
-   "label": "Submissions"
-  },
-  {
-   "bold": 1,
-   "fieldname": "in_chief",
-   "fieldtype": "Attach",
-   "label": "In Chief"
-  },
-  {
-   "fieldname": "reply",
-   "fieldtype": "Attach",
-   "label": "Reply"
-  },
-  {
-   "fieldname": "column_break_53",
-   "fieldtype": "Column Break"
-  },
-  {
-   "bold": 1,
-   "fieldname": "rejoinder",
-   "fieldtype": "Attach",
-   "label": "Rejoinder"
-  },
-  {
-   "collapsible": 1,
-   "fieldname": "applications_section",
-   "fieldtype": "Section Break",
-   "label": "Applications"
-  },
-  {
-   "bold": 1,
-   "fieldname": "chamber_summons",
-   "fieldtype": "Attach",
-   "label": "Chamber Summons"
-  },
-  {
-   "bold": 1,
-   "fieldname": "counter_affidavits",
-   "fieldtype": "Attach",
-   "label": "Counter affidavits"
-  },
-  {
-   "collapsible": 1,
-   "fieldname": "exhibits_section",
-   "fieldtype": "Section Break",
-   "label": "Exhibits"
-  },
-  {
-   "fieldname": "exhibits",
-   "fieldtype": "Table",
-   "label": "Exhibits",
-   "options": "Exhibit"
-  },
-  {
-   "fieldname": "column_break_57",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "other_documents",
-   "fieldtype": "Table",
-   "label": "Other Documents",
-   "options": "Other Document"
-  },
-  {
-   "collapsible": 1,
    "fieldname": "judgement",
    "fieldtype": "Section Break",
    "label": "Judgement"
@@ -426,11 +311,35 @@
    "fieldname": "judgement_document",
    "fieldtype": "Attach",
    "label": "Judgement"
+  },
+  {
+   "fieldname": "legislation_table",
+   "fieldtype": "Table",
+   "label": "Legislation Table",
+   "options": "Legislation Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "opposition_lawyer_section",
+   "fieldtype": "Section Break",
+   "label": "Opposition Lawyer"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "attachments",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "case_documents_table",
+   "fieldtype": "Table",
+   "label": "Case Documents Table",
+   "options": "Case Documents Table"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-11 06:58:47.701820",
+ "modified": "2022-04-13 09:48:14.399865",
  "modified_by": "Administrator",
  "module": "LAW",
  "name": "Case",

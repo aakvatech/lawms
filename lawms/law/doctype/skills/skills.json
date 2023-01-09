@@ -28,16 +28,15 @@
   },
   {
    "fieldname": "skill_rating",
-   "fieldtype": "Select",
+   "fieldtype": "Rating",
    "in_list_view": 1,
-   "label": "Skill Rating",
-   "options": "1\n2\n3\n4\n5"
+   "label": "Skill Rating"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-02-01 15:19:24.855676",
+ "modified": "2022-04-28 11:20:06.132220",
  "modified_by": "Administrator",
  "module": "LAW",
  "name": "Skills",

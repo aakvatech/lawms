@@ -14,7 +14,6 @@
   "status",
   "column_break_4",
   "type",
-  "public_information_section",
   "contact_information_section",
   "working_address",
   "work_mobile",
@@ -38,7 +37,6 @@
   "fees_fixed",
   "skills_section",
   "skills",
-  "personal_information",
   "citizenship_section",
   "nationality",
   "id_no",
@@ -51,13 +49,9 @@
   "home_phone",
   "status_section",
   "gender",
-  "column_break_39",
   "marital_status",
-  "birth_section",
+  "column_break_39",
   "dob",
-  "column_break_48",
-  "age",
-  "column_break_43",
   "qualifications_section",
   "degree",
   "certificate",
@@ -67,7 +61,6 @@
   "university",
   "percentage_achieved_in_certificate",
   "documents",
-  "experience_section",
   "information_section",
   "previous_experience_in_months",
   "gap_in_months",
@@ -83,6 +76,7 @@
  ],
  "fields": [
   {
+   "collapsible": 1,
    "fieldname": "basic_information_section",
    "fieldtype": "Section Break",
    "label": "Basic Information"
@@ -115,11 +109,7 @@
    "options": "Lawyer Type"
   },
   {
-   "fieldname": "public_information_section",
-   "fieldtype": "Section Break",
-   "label": "Public Information"
-  },
-  {
+   "collapsible": 1,
    "fieldname": "contact_information_section",
    "fieldtype": "Section Break",
    "label": "Contact Information"
@@ -154,6 +144,7 @@
    "label": "Work Phone"
   },
   {
+   "collapsible": 1,
    "fieldname": "position_section",
    "fieldtype": "Section Break",
    "label": "Position"
@@ -184,16 +175,19 @@
    "label": "Employment Date"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_21",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Practice Area"
   },
   {
    "fieldname": "practice_area",
    "fieldtype": "Table",
    "label": "Practice Area",
-   "options": "Practice Area"
+   "options": "Practice Area Table"
   },
   {
+   "collapsible": 1,
    "fieldname": "fee_method",
    "fieldtype": "Section Break",
    "label": "Fee Method",
@@ -224,6 +218,7 @@
    "mandatory_depends_on": "fees_fixed_check"
   },
   {
+   "collapsible": 1,
    "fieldname": "skills_section",
    "fieldtype": "Section Break",
    "label": "Skills"
@@ -235,11 +230,7 @@
    "options": "Skills"
   },
   {
-   "fieldname": "personal_information",
-   "fieldtype": "Section Break",
-   "label": "Personal Information"
-  },
-  {
+   "collapsible": 1,
    "fieldname": "citizenship_section",
    "fieldtype": "Section Break",
    "label": "Citizenship"
@@ -269,6 +260,7 @@
    "label": "Bank Account No"
   },
   {
+   "collapsible": 1,
    "fieldname": "contact_section",
    "fieldtype": "Section Break",
    "label": "Contact"
@@ -288,6 +280,7 @@
    "label": "Home Phone"
   },
   {
+   "collapsible": 1,
    "fieldname": "status_section",
    "fieldtype": "Section Break",
    "label": "Status"
@@ -307,11 +300,6 @@
    "label": "Marital Status"
   },
   {
-   "fieldname": "birth_section",
-   "fieldtype": "Section Break",
-   "label": "Birth "
-  },
-  {
    "bold": 1,
    "fieldname": "dob",
    "fieldtype": "Date",
@@ -319,20 +307,7 @@
    "label": "Birth Date"
   },
   {
-   "fieldname": "column_break_48",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "age",
-   "fieldtype": "Data",
-   "label": "Age",
-   "read_only": 1
-  },
-  {
-   "fieldname": "column_break_43",
-   "fieldtype": "Column Break"
-  },
-  {
+   "collapsible": 1,
    "fieldname": "qualifications_section",
    "fieldtype": "Section Break",
    "label": "Qualifications"
@@ -381,14 +356,10 @@
    "label": "Documents"
   },
   {
-   "fieldname": "experience_section",
-   "fieldtype": "Section Break",
-   "label": "Experience"
-  },
-  {
+   "collapsible": 1,
    "fieldname": "information_section",
    "fieldtype": "Section Break",
-   "label": "Information"
+   "label": "Experience"
   },
   {
    "fieldname": "previous_experience_in_months",
@@ -415,6 +386,7 @@
    "label": "Countable Experience in Months"
   },
   {
+   "collapsible": 1,
    "fieldname": "column_break_62",
    "fieldtype": "Section Break",
    "label": "Current Cases"
@@ -446,7 +418,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-01 15:20:07.364147",
+ "modified": "2022-04-27 02:31:26.607459",
  "modified_by": "Administrator",
  "module": "LAW",
  "name": "Lawyer",

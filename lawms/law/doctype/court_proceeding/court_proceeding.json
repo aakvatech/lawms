@@ -31,6 +31,8 @@
   "principle_legislation",
   "subsidiary_legislation",
   "opposition_lawyer",
+  "attachments_section",
+  "court_proceeding_documents",
   "judgement_section",
   "description",
   "summary"
@@ -198,11 +200,22 @@
    "fieldname": "summary",
    "fieldtype": "Text Editor",
    "label": "Summary"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "court_proceeding_documents",
+   "fieldtype": "Table",
+   "label": "Court Proceeding Documents",
+   "options": "Case Documents Table"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-11 06:57:20.595129",
+ "modified": "2022-04-13 09:55:44.123327",
  "modified_by": "Administrator",
  "module": "LAW",
  "name": "Court Proceeding",

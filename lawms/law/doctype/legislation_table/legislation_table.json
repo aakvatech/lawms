@@ -1,36 +1,37 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2022-04-09 22:06:51.822352",
+ "creation": "2022-04-12 15:48:03.334664",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "other",
-  "rank"
+  "legislation",
+  "type"
  ],
  "fields": [
   {
-   "fieldname": "other",
-   "fieldtype": "Attach",
-   "in_list_view": 1,
-   "label": "Other"
-  },
-  {
-   "fieldname": "rank",
+   "fieldname": "legislation",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Rank",
-   "options": "Rank"
+   "label": "Legislation",
+   "options": "Legislation"
+  },
+  {
+   "fetch_from": "legislation.legislation_type",
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "type"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-04-09 22:06:51.822352",
+ "modified": "2022-04-12 15:52:53.932114",
  "modified_by": "Administrator",
  "module": "LAW",
- "name": "Other Document",
+ "name": "Legislation Table",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

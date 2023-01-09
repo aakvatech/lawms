@@ -1,29 +1,29 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:judge",
- "creation": "2022-02-01 11:56:38.615077",
+ "autoname": "field:document_title",
+ "creation": "2022-04-13 08:55:32.196162",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "judge"
+  "document_title"
  ],
  "fields": [
   {
    "allow_in_quick_entry": 1,
-   "fieldname": "judge",
+   "fieldname": "document_title",
    "fieldtype": "Data",
-   "label": "Judge",
+   "label": "Document Title",
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-12 12:30:29.035811",
+ "modified": "2022-04-13 08:56:27.979651",
  "modified_by": "Administrator",
  "module": "LAW",
- "name": "Judge",
+ "name": "Case Document",
  "owner": "Administrator",
  "permissions": [
   {

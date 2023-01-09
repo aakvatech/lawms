@@ -25,12 +25,16 @@
   {
    "fieldname": "court_type",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Court Type",
    "options": "Court Type"
   },
   {
    "fieldname": "court_location",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Court Location"
   },
   {
@@ -40,6 +44,8 @@
   {
    "fieldname": "court_subtype",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Court SubType",
    "options": "Court SubType"
   },
@@ -49,13 +55,13 @@
   },
   {
    "fieldname": "court_description",
-   "fieldtype": "Data",
+   "fieldtype": "Text Editor",
    "label": "Court Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-09 06:19:16.814601",
+ "modified": "2022-04-20 15:37:23.769756",
  "modified_by": "Administrator",
  "module": "LAW",
  "name": "Court",

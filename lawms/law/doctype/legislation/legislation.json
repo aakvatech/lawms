@@ -10,6 +10,7 @@
  "field_order": [
   "country",
   "title",
+  "legislation_type",
   "document"
  ],
  "fields": [
@@ -22,6 +23,8 @@
   {
    "fieldname": "title",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Title",
    "unique": 1
   },
@@ -29,11 +32,19 @@
    "fieldname": "document",
    "fieldtype": "Attach",
    "label": "Document"
+  },
+  {
+   "fieldname": "legislation_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Legislation Type",
+   "options": "Legislation Type"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-09 21:41:10.543699",
+ "modified": "2022-04-12 15:31:59.010205",
  "modified_by": "Administrator",
  "module": "LAW",
  "name": "Legislation",
