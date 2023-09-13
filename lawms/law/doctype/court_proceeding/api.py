@@ -7,9 +7,9 @@ import frappe
 def get_case_info(case):   
          judges = frappe.db.sql(f''' SELECT judge from `tabJudge Table` where parenttype = "Case" and parent = "{case}" ORDER BY idx
          ''', as_dict = True)
-         appellants = frappe.db.sql(f''' SELECT appellant from `tabAppellant Table` where parenttype = "Case" and parent = "{case}" ORDER BY idx
+         appellants = frappe.db.sql(f''' SELECT appellant, rank, appellant_type from `tabAppellant Table` where parenttype = "Case" and parent = "{case}" ORDER BY idx
          ''', as_dict = True)
-         respondents = frappe.db.sql(f''' SELECT respondent from `tabRespondent Table` where parenttype = "Case" and parent = "{case}" ORDER BY idx
+         respondents = frappe.db.sql(f''' SELECT respondent, rank, respondent_type from `tabRespondent Table` where parenttype = "Case" and parent = "{case}" ORDER BY idx
          ''', as_dict = True)
          info = [judges, appellants, respondents]
          return info

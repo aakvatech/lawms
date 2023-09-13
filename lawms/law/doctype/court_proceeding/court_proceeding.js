@@ -8,7 +8,7 @@ frappe.ui.form.on('Court Proceeding', {
         
         if(case_name) {
             frappe.call({
-                method: "law.law.doctype.court_proceeding.api.get_case_info",
+                method: "lawms.law.doctype.court_proceeding.api.get_case_info",
                 args: {
                     case: case_name
                 },
@@ -16,6 +16,8 @@ frappe.ui.form.on('Court Proceeding', {
                 frm.doc.judge_table = [];
                 frm.doc.appellant_table = [];
                 frm.doc.respondent_table = [];
+
+              
 				
 				//[0] is judge array
                 $.each(r.message[0], function(_i, e) {
@@ -26,11 +28,15 @@ frappe.ui.form.on('Court Proceeding', {
                  $.each(r.message[1], function(_i, e) {
                     let entry = frm.add_child("appellant_table")
                     entry.appellant = e.appellant
+                    entry.rank = e.rank
+                    entry.appellant_type = e.appellant_type
                 })
 				//[2] is respondent array
                  $.each(r.message[2], function(_i, e) {
                     let entry = frm.add_child("respondent_table")
                     entry.respondent = e.respondent
+                    entry.rank = e.rank
+                    entry.respondent_type = e.respondent_type
                 })
                 refresh_field("judge_table")
                 refresh_field("appellant_table")
